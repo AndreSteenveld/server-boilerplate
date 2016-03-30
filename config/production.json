@@ -1,0 +1,11 @@
+{
+  "host": "",
+  "port": 80,
+  "public": "../public/",
+  "auth": {
+    "token": {
+      "secret": ""
+    },
+    "local": {}
+  }
+}

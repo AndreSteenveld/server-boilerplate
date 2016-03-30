@@ -17,9 +17,11 @@
 	$ npm test
 ```
 
+# Debugging
+
 # Local generators
 
-Creating models, middleware and other components is tedious in every project and usually contains some project specific boilerplate code. To make the process of creating a common component as smooth as possible this project comes with local generators that can do the heavy lifting for you. These can be found in the `./generator/` directory. If you find yourself editing the generated code very often (adding decorators, making sure your model inherits from a common `Model` class, etc) the templates can easily be edited to fit your projects specific needs.
+Creating models, middleware and other components is tedious in every project and usually contains some project specific boilerplate code. To make the process of creating a common component as smooth as possible this project comes with local generators that can do the heavy lifting for you. These can be found in the `./generator/` directory. If you find yourself editing the generated code very often (adding decorators, making sure your model inherits from a common `Model` class, etc) the templates can easily be edited to fit your projects specific needs. It is worth noting that the generators are written in plain ES5.
 
 The generators themselves are just bare bone yeoman generators and documentation on how to write them can be found on the yeoman website. There are two ways to use the generators in this project depending if yeoman is globally installed or not.
 
