@@ -17,6 +17,20 @@
 	$ npm test
 ```
 
+# Local generators
+
+Creating models, middleware and other components is tedious in every project and usually contains some project specific boilerplate code. To make the process of creating a common component as smooth as possible this project comes with local generators that can do the heavy lifting for you. These can be found in the `./generator/` directory. If you find yourself editing the generated code very often (adding decorators, making sure your model inherits from a common `Model` class, etc) the templates can easily be edited to fit your projects specific needs.
+
+The generators themselves are just bare bone yeoman generators and documentation on how to write them can be found on the yeoman website. There are two ways to use the generators in this project depending if yeoman is globally installed or not.
+
+```
+	# Yeoman globally installed, assuming you are in the root of the project
+	$ yo ./generator/model
+
+	# Yeoman not installed globally
+	$ ./generate ./generator/model
+```
+
 # Tools and libraries used
 
 [mocha](http://mochajs.com) - Mocha is a feature-rich JavaScript test framework running on Node.js and the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Hosted on GitHub.
@@ -26,6 +40,8 @@
 [sinon](http://sinonjs.org/) - Standalone test spies, stubs and mocks for JavaScript. No dependencies, works with any unit testing framework.
 
 [flow](http://flowtype.org) - (in combination with the appropriate babel transforms) Flow is a static type checker for JavaScript. It can be used to catch common bugs in JavaScript programs before they run.
+
+[yeoman](http://yeoman.io/) - A generator is basically a plugin that can be run with the `yo` command to scaffold complete projects or useful parts.
 
 ## Babel
 
