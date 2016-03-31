@@ -17,7 +17,9 @@
 	$ npm test
 ```
 
-# Debugging
+# Debugging and profiling
+
+Using `node-inspector` and `node-debug` yielded some positive results, your milage may vary when using `iron-node`.
 
 # Local generators
 
@@ -44,6 +46,10 @@ The generators themselves are just bare bone yeoman generators and documentation
 [flow](http://flowtype.org) - (in combination with the appropriate babel transforms) Flow is a static type checker for JavaScript. It can be used to catch common bugs in JavaScript programs before they run.
 
 [yeoman](http://yeoman.io/) - A generator is basically a plugin that can be run with the `yo` command to scaffold complete projects or useful parts.
+
+[feathersjs](http://feathersjs.com/) - With Feathers it's easy to create scalable real-time applications. This guide will tell you everything you need to know about creating web and mobile apps with Feathers.
+
+The feathersjs generators have been used to create the local generators in this package. They have been stripped of all the database specifics and the templates have been updated to work with the other dependencies and they were converted to ES6/7 to take advantage of the babel setup in this project.
 
 ## Babel
 
