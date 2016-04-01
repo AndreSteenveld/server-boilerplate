@@ -1,0 +1,23 @@
+{
+    "extends": [
+        "./no-rules.eslintrc",
+        "./eqeqeq.eslintrc",
+        "./no-extra-semi.eslintrc",
+        "./indent.eslintrc",
+        "./no-multi-spaces.eslintrc",
+        "./eol-last.eslintrc",
+        "./no-mixed-spaces-and-tabs.eslintrc",
+        "./comma-spacing.eslintrc",
+        "./no-spaced-func.eslintrc",
+        "./no-trailing-spaces.eslintrc",
+        "./semi.eslintrc",
+        "./semi-spacing.eslintrc",
+        "./linebreak-style.eslintrc",
+        "./quotes.eslintrc",
+        "./space-unary-ops.eslintrc",
+        "./space-infix-ops.eslintrc",
+        "./space-in-parens.eslintrc",
+        "./space-before-blocks.eslintrc",
+        "./space-before-function-paren.eslintrc"
+    ]
+}

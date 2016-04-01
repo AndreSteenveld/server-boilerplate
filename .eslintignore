@@ -1,0 +1,5 @@
+#
+# Ignore the external packages and what ever we pull in externally
+#
+node_modules/
+public/external/

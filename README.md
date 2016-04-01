@@ -2,7 +2,7 @@
 
 ```
 	$ git clone <path to this repo>
-	$ npm install & jspm install
+	$ npm install && jspm install
 ```
 
 Assuming you have `node` and `npm` install on your machine setting up this application to start hacking is realativly straight forward. For development you can install some additional tools to make your life a lot easier.

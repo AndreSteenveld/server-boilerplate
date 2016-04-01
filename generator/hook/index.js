@@ -1,7 +1,5 @@
 'use strict';
 
-class de_bla { }
-
 var generators = require('yeoman-generator');
 var path = require('path');
 var fs = require('fs');

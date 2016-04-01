@@ -1,0 +1,5 @@
+{
+    "rules": {
+        "semi-spacing": [2, {"before": false, "after": true}]
+    }
+}
