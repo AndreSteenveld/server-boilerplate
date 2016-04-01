@@ -84,7 +84,7 @@ module.exports = generators.Base.extend({
     // Generating the appropriate model based on the orm type.
     this.fs.copyTpl(
       this.templatePath(this.props.type + '.js'),
-      this.destinationPath('src/services/', this.props.service, this.props.name + '-model.js'),
+      this.destinationPath('src/services/', this.props.service, 'schema-' + this.props.name + '.js'),
       this.props
     );
   },
