@@ -1,5 +1,10 @@
 # Checkout and setup
 
+```
+	$ git clone <path to this repo>
+	$ npm install & jspm install
+```
+
 Assuming you have `node` and `npm` install on your machine setting up this application to start hacking is realativly straight forward. For development you can install some additional tools to make your life a lot easier.
 
 ```
@@ -8,11 +13,6 @@ Assuming you have `node` and `npm` install on your machine setting up this appli
 
 	# After installing JSPM register the bower endpoint, more information about this can be found at: https://github.com/2fd/jspm-bower-endpoint
 	$ jspm registry create bower jspm-bower-endpoint
-```
-
-```
-	$ git clone <path to this repo>
-	$ npm install
 ```
 
 # Running the application
@@ -42,8 +42,20 @@ The generators themselves are just bare bone yeoman generators and documentation
 	$ yo ./generator/model
 
 	# Yeoman not installed globally
-	$ ./generate ./generator/model
+	$ npm run-script generate ./generator/model
 ```
+
+## Available generators
+
+**hook** -
+
+**middleware** -
+
+**model** -
+
+**service** -
+
+**migration** - TODO
 
 # Tools and libraries used
 

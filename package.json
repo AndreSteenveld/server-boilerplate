@@ -6,7 +6,8 @@
   "scripts": {
     "test": "babel-node ./node_modules/.bin/_mocha --recursive --reporter list ./test/*",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
-    "start": "node index.js"
+    "start": "node index.js",
+    "generate": "babel-node ./node_modules/yo/lib/cli.js "
   },
   "author": "Andre Steenveld",
   "license": "CC0-1.0",
