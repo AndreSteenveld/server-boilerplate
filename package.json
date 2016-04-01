@@ -4,7 +4,7 @@
   "description": "Server boilerplate project",
   "main": "index.js",
   "scripts": {
-    "test": "babel-node ./node_modules/.bin/_mocha --reporter list ./test/*",
+    "test": "babel-node ./node_modules/.bin/_mocha --recursive --reporter list ./test/*",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "start": "node index.js"
   },

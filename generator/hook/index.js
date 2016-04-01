@@ -1,5 +1,7 @@
 'use strict';
 
+class de_bla { }
+
 var generators = require('yeoman-generator');
 var path = require('path');
 var fs = require('fs');
@@ -63,16 +65,28 @@ module.exports = generators.Base.extend({
         ]
       },
       {
+        type: "list",
+        name: "global",
+        message: "What kind of hook do you want?",
+        store: true,
+        choices: [
+          { name: "global", value: "global" },
+          { name: "for a service", value: "service" }
+        ]
+      },
+      {
         type: 'input',
         name: 'service',
         store: true,
-        message: 'What service is this hook for?'
+        message: 'What service is this hook for?',
+        when: function( p ){ return "service" === p.global }
       },
       {
         type: 'checkbox',
         name: 'method',
         store: true,
         message: 'What method is this hook for?',
+        when: function( p ){ return "service" === p.global },
         choices: [
           {
             name: 'no specific method',
@@ -118,15 +132,29 @@ module.exports = generators.Base.extend({
   },
 
   writing: function () {
-    var hookIndexPath = path.join('src', 'services', this.props.service, 'hooks', 'index.js');
-    this.props.hookPath = path.join('src', 'services', this.props.service, 'hooks', this.props.name + '.js');
-    this.props.hookTestPath = path.join('test', 'services', this.props.service, 'hooks', this.props.name + '.test.js');
+    var hookIndexPath = "";
+
+    console.log( this.props )
+
+    if( "global" === this.props.global ){
+
+      hookIndexPath = path.join( "src", "hooks", "index.js" );
+      this.props.hookPath = path.join('src', 'hooks', this.props.name + '.js');
+      this.props.hookTestPath = path.join('test', 'hooks', this.props.name + '.test.js');
+
+    } else {
+
+      hookIndexPath = path.join('src', 'services', this.props.service, 'hooks', 'index.js');
+      this.props.hookPath = path.join('src', 'services', this.props.service, 'hooks', this.props.name + '.js');
+      this.props.hookTestPath = path.join('test', 'services', this.props.service, 'hooks', this.props.name + '.test.js');
+
+    }
 
     // this.props.hookTestPath = path.join('test/services/', this.props.service, 'hooks/', this.props.name + '.test.js');
     this.props.codeName = inflect.camelize(inflect.underscore(this.props.name), false);
 
     // Automatically import the hook into services/<service-name>/hooks/index.js and initialize it.
-    importHook(hookIndexPath, this.props.codeName, './' + this.props.name, this.props.type, this.props.method);
+    if( null != this.props.method ) importHook(hookIndexPath, this.props.codeName, './' + this.props.name, this.props.type, this.props.method);
 
     // copy the hook
     this.fs.copyTpl(
