@@ -50,7 +50,6 @@
     "feathers-nedb": "^2.2.2",
     "flow-bin": "^0.22.1",
     "i": "^0.3.4",
-    "jspm": "^0.16.32",
     "mocha": "^2.4.5",
     "nedb": "^1.8.0",
     "object.assign": "^4.0.3",
@@ -68,7 +67,10 @@
       "baseURL": "public",
       "packages": "public/external"
     },
-    "dependencies": {},
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "ng-admin": "bower:ng-admin@^0.9.1"
+    },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
