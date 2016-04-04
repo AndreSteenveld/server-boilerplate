@@ -32,4 +32,4 @@ describe( "Boilerplate test suite ::", function( ){
 
 	});
 
-})
+});
