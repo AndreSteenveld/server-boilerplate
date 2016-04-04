@@ -1,5 +1,5 @@
 {
     "rules": {
-        "space-in-parens": [ 2, "never"]
+        "space-in-parens": [ 2, "always", { "exceptions": [ "[]", "{}" ]} ]
     }
 }

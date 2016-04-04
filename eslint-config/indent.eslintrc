@@ -1,6 +1,6 @@
 {
     "rules": {
-        "indent": [ 2, 4, {
+        "indent": [ 2, "tab", {
             "SwitchCase": 1,
             "VariableDeclarator": {
                 "var": 1,

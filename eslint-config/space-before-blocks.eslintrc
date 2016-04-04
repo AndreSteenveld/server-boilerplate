@@ -1,5 +1,5 @@
 {
     "rules": {
-        "space-before-blocks": [ 2, "always" ]
+        "space-before-blocks": [ 2, { "functions": "never", "keywords": "always", "classes": "always" } ]
     }
 }

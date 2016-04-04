@@ -38,11 +38,9 @@
         //
         // http://eslint.org/docs/user-guide/configuring#specifying-environments
         //
-        browser: true,
-        node: true,
-        meteor: true,
-
-        es6: true
+        "node": true,
+        "mocha": true,
+        "es6": true
     },
 
     "globals": {
