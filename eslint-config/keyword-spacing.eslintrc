@@ -1,0 +1,50 @@
+{
+    "rules": {
+        "keyword-spacing": [ "error", {
+            "before": false,
+            "after": true,
+            "overrides": {
+                "as": { "before": true }, // (in module declarations),
+                "break": { },
+                "case": { },
+                "catch": { "before": true },
+                "class": { },
+                "const": { },
+                "continue": { },
+                "debugger": { },
+                "default": { },
+                "delete": { },
+                "do": { },
+                "else": { "before": true },
+                "export": { },
+                "extends": { },
+                "finally": { "before": true },
+                "for": { },
+                "from": { "before": true }, // (in module declarations),
+                "function": { },
+                "get": { }, // (of getters),
+                "if": { "after": false },
+                "import": { },
+                "in": { },
+                "instanceof": { },
+                "let": { },
+                "new": { },
+                "of": { }, // (in for-of statements),
+                "return": { },
+                "set": { }, // (of setters),
+                "static": { },
+                "super": { },
+                "switch": { },
+                "this": { },
+                "throw": { },
+                "try": { },
+                "typeof": { },
+                "var": { },
+                "void": { },
+                "while": { },
+                "with": { },
+                "yield": { }
+            }
+        }]
+    }
+}

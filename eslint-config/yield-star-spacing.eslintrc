@@ -1,0 +1,5 @@
+{
+    "rules": {
+        yield-star-spacing: ["error", { "before": true, "after": true } ]
+    }
+}

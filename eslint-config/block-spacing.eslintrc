@@ -1,0 +1,5 @@
+{
+    "rules": {
+        "block-spacing": [ "error", "always" ]
+    }
+}

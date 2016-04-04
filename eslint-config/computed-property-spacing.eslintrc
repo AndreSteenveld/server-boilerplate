@@ -1,0 +1,5 @@
+{
+    "rules": {
+        "computed-property-spacing": ["error", "always"]
+    }
+}

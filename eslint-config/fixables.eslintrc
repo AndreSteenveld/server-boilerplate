@@ -18,6 +18,17 @@
         "./space-infix-ops.eslintrc",
         "./space-in-parens.eslintrc",
         "./space-before-blocks.eslintrc",
-        "./space-before-function-paren.eslintrc"
+        "./space-before-function-paren.eslintrc",
+        "./template-curly-spacing.eslintrc",
+        "./array-bracket-spacing.eslintrc",
+        "./arrow-spacing.eslintrc",
+        "./block-spacing.eslintrc",
+        "./generator-star-spacing.eslintrc",
+        "./generator-star-spacing.eslintrc",
+        "./jsx-quotes.eslintrc",
+        "./keyword-spacing.eslintrc",
+        "./object-curly-spacing.eslintrc",
+        "./template-curly-spacing.eslintrc",
+        "./yield-star-spacing.eslintrc"
     ]
 }
