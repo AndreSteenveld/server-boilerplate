@@ -11,4 +11,4 @@ export default class Thing {
 	property = INSTANCE_VALUE;
 	method( ){ return this.property; }
 
-};
+}
